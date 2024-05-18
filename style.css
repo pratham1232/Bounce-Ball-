@@ -1,0 +1,224 @@
+body{
+    background-color:rgb(3, 9, 25)
+}
+.container {
+    margin: auto;
+    height: 86vh;
+    width: 95vw;
+    border-radius: 12px;
+    background-color: rgb(5, 39, 55);
+    display: flex;
+    align-items: end;
+    align-content: end;
+}
+.ball {
+    margin: 8px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(40, 9, 79);
+    color: aquamarine;
+    border-radius: 500px;
+    box-shadow: inset 0px 1px 19px 6px rgba(15, 225, 152, 0.439);
+    animation: vertical 30s linear, horizontal 20s linear forwards;
+}
+.text{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size:40px;
+    font-family: sans-serif;
+    color: rgb(70, 118, 159);
+}
+
+@keyframes vertical {
+    from{
+        transform: translateX(0vh);
+    }
+    10%{
+        background-color: aliceblue;
+        transform: translateY(-85vh);
+    }
+    15%{
+        background-color: rgb(75, 96, 114);
+        transform: translatey(0vh);
+    }
+    20%{
+        background-color: rgb(222, 156, 41);
+        transform: translateY(-100vh);
+    }
+    25%{
+        background-color: rgb(222, 41, 71);
+        transform: translateY(0vh);
+    }
+    30%{
+        background-color: rgb(222, 156, 41);
+        transform: translateY(-125vh);
+    }
+    35%{
+        background-color: rgb(222, 41, 71);
+        transform: translateY(0vh);
+    }
+    40%{
+        background-color: rgb(222, 156, 41);
+        transform: translateY(-125vh);
+    }
+    50%{
+        background-color: rgb(222, 41, 71);
+        transform: translateY(0vh);
+    }
+    55%{
+        background-color: blueviolet;
+        transform: translateY(-135vh);
+    }
+    60%{
+        background-color: rgb(222, 156, 41);
+        transform: translateY(0vh);
+    }
+    65%{
+        background-color: rgb(222, 41, 71);
+        transform: translateY(-140vh);
+    }
+    70%{
+        background-color: blueviolet;
+        transform: translateY(0vh);
+    }
+    75%{
+        background-color: blueviolet;
+        transform: translateY(-150vh);
+    }
+    80%{
+        background-color: rgb(222, 156, 41);
+        transform: translateY(0vh);
+    }
+    90%{
+        background-color: rgb(222, 41, 71);
+        transform: translateY(-160vh);
+    }
+    950%{
+        background-color: blueviolet;
+        transform: translateY(0vh);
+    }
+    100%{
+        background-color: blueviolet;
+        transform: translateY(-160vh);
+    }
+}
+
+
+@keyframes horizontal {
+    from{
+
+    }
+    to{
+        transform: translateX(87vw);
+    }
+}
+@media screen and (max-width:1250px) {
+    .container {
+        margin: auto;
+        /* margin-top: 90px; */
+        height: 86vh;
+        width: 95vw;
+        border-radius: 12px;
+        background-color: rgb(5, 39, 55);
+        display: flex;
+        /* justify-content: flex-end; */
+        /* align-items: last baseline; */
+        align-items: end;
+        align-content: end;
+    }
+    
+    .ball {
+        margin: 8px;
+        height: 80px;
+        width: 80px;
+        background-color: rgb(40, 9, 79);
+        color: aquamarine;
+        border-radius: 500px;
+        box-shadow: inset 0px 1px 19px 6px rgba(15, 225, 152, 0.439);
+        animation: vertical 15s linear, horizontal 18s linear forwards;
+        /* animation-direction: normal; */
+        /* transform: translatey(0vh); */
+        /* animation: vertical 3s linear 1s; */
+    }
+    
+    @keyframes vertical {
+        from{
+            transform: translateX(0vh);
+        }
+        10%{
+            background-color: aliceblue;
+            transform: translateY(-85vh);
+        }
+        15%{
+            background-color: rgb(75, 96, 114);
+            transform: translatey(0vh);
+        }
+        20%{
+            background-color: rgb(222, 156, 41);
+            transform: translateY(-90vh);
+        }
+        25%{
+            background-color: rgb(222, 41, 71);
+            transform: translateY(0vh);
+        }
+        30%{
+            background-color: rgb(222, 156, 41);
+            transform: translateY(-105vh);
+        }
+        35%{
+            background-color: rgb(222, 41, 71);
+            transform: translateY(0vh);
+        }
+        40%{
+            background-color: rgb(222, 156, 41);
+            transform: translateY(-115vh);
+        }
+        50%{
+            background-color: rgb(222, 41, 71);
+            transform: translateY(0vh);
+        }
+        55%{
+            background-color: blueviolet;
+            transform: translateY(-135vh);
+        }
+        60%{
+            background-color: rgb(222, 156, 41);
+            transform: translateY(0vh);
+        }
+        65%{
+            background-color: rgb(222, 41, 71);
+            transform: translateY(-140vh);
+        }
+        70%{
+            background-color: blueviolet;
+            transform: translateY(0vh);
+        }
+        75%{
+            background-color: blueviolet;
+            transform: translateY(-150vh);
+        }
+        80%{
+            background-color: rgb(222, 156, 41);
+            transform: translateY(0vh);
+        }
+        90%{
+            background-color: rgb(222, 41, 71);
+            transform: translateY(-160vh);
+        }
+        100%{
+            background-color: blueviolet;
+            transform: translateY(0vh);
+        }
+    }
+    
+    
+    @keyframes horizontal {
+        from{
+    
+        }
+        to{
+            transform: translateX(67vw);
+        }
+    }
+}
